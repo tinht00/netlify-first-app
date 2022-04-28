@@ -5,7 +5,10 @@ function Footer() {
     <div className="footer">
       <div className="footer__img">
         <img
-          src="https://initiate.alphacoders.com/images/581/cropped-1500-500-581083.jpg?7633"
+          src={
+            "https://images6.alphacoders.com/581/thumb-1920-581083.jpg" ||
+            "https://images.wallpaperscraft.com/image/single/cat_eyes_blue_143433_1600x900.jpg"
+          }
           alt=""
         />
       </div>

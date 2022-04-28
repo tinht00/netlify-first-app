@@ -8,7 +8,14 @@ function Header() {
         <span className="title-sm">Cats, Cats & More Cats</span>
         <span className="title-lg">Blog</span>
       </div>
-      <img src="https://initiate.alphacoders.com/images/107/cropped-1600-900-1073070.jpg?3768" alt="" className="header__img" />
+      <img
+        src={
+          "https://images.alphacoders.com/107/thumb-1920-1073070.jpg" ||
+          "https://images.wallpaperscraft.com/image/single/cat_grass_hide_144627_1920x1080.jpg" 
+        }
+        alt=""
+        className="header__img"
+      />
     </div>
   );
 }
