@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
-  let user = true;
+  
   return (
     <div className="nav">
       <div className="nav__left">
@@ -27,7 +27,7 @@ function Navbar() {
             <Link className="link" to={"/write"}>WRITE</Link>
           </li>
           <li className="list__item">
-            <Link className="link" to={"/login"}>{user && "LOGOUT"}</Link>
+            <Link className="link" to={"/login"}>LOGOUT</Link>
           </li>
         </ul>
       </div>
@@ -37,22 +37,7 @@ function Navbar() {
             src="https://i.pinimg.com/564x/d3/27/bd/d327bdb052d4c756052882085ea13b50.jpg"
             alt="avatar"
           /></Link>
-        {/* {user ? (
-         
-        ) : (
-          <ul className="nav__list">
-            <li className="list__item">
-              <Link className="link" to={"/login"}>
-                LOGIN
-              </Link>
-            </li>
-            <li className="list__item">
-              <Link className="link"  to={"/register"}>
-                REGISTER
-              </Link>
-            </li>
-          </ul>
-        )} */}
+        
 
         <i className="nav__searchIcon fa-solid fa-magnifying-glass"></i>
       </div>

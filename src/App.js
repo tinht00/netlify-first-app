@@ -7,13 +7,15 @@ import Settings from "./components/Pages/Settings/Settings";
 import Single from "./components/Pages/Single/Single";
 import Write from "./components/Pages/Write/Write";
 import Home from "./components/Pages/Home/Home";
-import Footer from "./components/Footer/Footer";
+import NavbarMobile from "./components/Navbar/Navbar_md";
+
 
 function App() {
   let user = true;
   return (
     <div className="App">
       <Navbar />
+      <NavbarMobile />
       <Routes>
         <Route path="/" element={user ? <Home /> : <Login />} />
         <Route path="/register" element={<Register />} />

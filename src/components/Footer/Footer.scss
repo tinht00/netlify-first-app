@@ -14,9 +14,15 @@
          opacity: 0.7;
          object-fit: cover;
          margin-bottom: -4px;
+         
+   @media screen and (max-width:768px) {
+      object-fit: fill;
+      }
       }
    }
    .group__social{
+      
+  
       width: 100%;
       display: flex;
       flex: 3;
@@ -34,6 +40,11 @@
    }
 
    &__contacts{
+      @media screen and (max-width:768px) {
+      
+         // flex-direction: column;
+         display: none;
+         }
       width: 100%;
       display: flex;
       flex: 3;

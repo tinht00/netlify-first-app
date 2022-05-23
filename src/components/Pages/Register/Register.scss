@@ -1,3 +1,4 @@
+@use '../../styles/variables' as *;
 .register {
    min-height: calc(100vh - 50px);
    display: flex;
@@ -33,7 +34,7 @@
    &__btn {
       margin-top: 20px;
       cursor: pointer;
-      background-color: lightcoral;
+      background-color: $btn;
       border: none;
       color: white;
       border-radius: 10px;
@@ -42,7 +43,7 @@
       text-align: center;
 
       &:hover{
-         background-color: #e36e6e;
+         background-color: $btn-hover;
       }
    }
 
@@ -51,7 +52,7 @@
       position: absolute; 
       top: 10%;
       right: 2%;
-      background-color: teal;
+      background-color: $btn;
       border: none;
       padding: 10px 20px;
       color: white;
@@ -60,7 +61,7 @@
       text-align: center;
 
       &:hover{
-         background-color: #006666;
+         background-color: $btn-hover;
       }
    }
 }

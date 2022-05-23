@@ -15,6 +15,7 @@ function SinglePost() {
             <i className="far fa-edit"></i>
             <i className="far fa-trash-alt"></i>
           </div>
+          
         </h1>
         <div className="singlePost__info">
            <span className="singlePost__author">

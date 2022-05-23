@@ -1,3 +1,4 @@
+@use '../../styles/variables' as *;
 .write {
    padding-top: 50px;
    display: flex;
@@ -32,12 +33,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #444;
+      color: $icon;
       font-size: 20px;
       cursor: pointer;
 
       &:hover {
-         color: #222;
+         color: $icon-hover;
       }
    }
 
@@ -58,11 +59,16 @@
       top:83%;
       right: 10%;
       color: white;
-      background-color: teal;
+      background-color: $btn;
       padding: 10px;
       border: none;
       border-radius: 10px;
       cursor: pointer;
       font-size: 16px;
+      
+      &:hover{
+         background-color: $btn-hover;
+         
+      }
    }
 }

@@ -1,6 +1,8 @@
 .home {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-/*# sourceMappingURL=Home.css.map */
+@media screen and (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+}

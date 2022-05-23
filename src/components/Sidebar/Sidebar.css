@@ -1,36 +1,21 @@
 .sidebar {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+  flex: 3;
   margin: 20px;
+  height: fit-content;
   padding-bottom: 30px;
   background-color: #fdfbfb;
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 7%;
 }
-
 .sidebar .sidebar__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .sidebar .sidebar__item .sidebar__title {
   margin: 10px;
   padding: 5px;
@@ -44,49 +29,47 @@
   line-height: 20px;
   text-align: center;
 }
-
 .sidebar .sidebar__item .sidebar__img {
   margin-top: 15px;
   width: 150px;
+  height: 150px;
+  object-fit: contain;
 }
-
 .sidebar .sidebar__item p {
   padding: 30px;
 }
-
 .sidebar .sidebar__item .sidebar__list {
   list-style: none;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  padding-left: 20%;
 }
-
+@media screen and (max-width: 768px) {
+  .sidebar .sidebar__item .sidebar__list {
+    padding-left: 20%;
+  }
+}
 .sidebar .sidebar__item .sidebar__list .list__item {
   display: inline-block;
   width: 50%;
   margin-top: 15px;
   cursor: pointer;
 }
-
+.sidebar .sidebar__item .sidebar__list .list__item:hover {
+  text-shadow: 0 0 10px #222;
+}
 .sidebar .sidebar__item .sidebar__social {
   margin-top: 15px;
   width: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .sidebar .sidebar__item .sidebar__social .sidebar__icon {
-  font-style: 16px;
+  font-size: 26px;
   margin-left: 10px;
   cursor: pointer;
+  color: #666;
 }
-
 .sidebar .sidebar__item .sidebar__social .sidebar__icon:hover {
   color: #222;
 }
-/*# sourceMappingURL=Sidebar.css.map */

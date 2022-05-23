@@ -1,0 +1,17 @@
+$icon:#666;
+$icon-hover:#222;
+$categories-tag:#be9656;
+$post-time:#999;
+$btn:teal;
+$btn-hover:#006666;
+
+
+// Responsive Breakpoint
+@mixin breakpoint ($point) {
+   @if $point == md {
+      // 768px
+      @media (max-width: 768px) {
+         @content;
+      }
+   }
+}
