@@ -21,7 +21,7 @@
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: -moz-center;
+    text-align: center;
     padding: 0;
   }
   .navbar__md__content .nav__list .list__item {
@@ -29,7 +29,6 @@
     list-style: none;
     margin-top: 50px;
     cursor: pointer;
-    width: fit-content;
   }
   .navbar__md__content .nav__list .list__item .link {
     text-decoration: none;
