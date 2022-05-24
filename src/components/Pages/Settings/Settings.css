@@ -1,6 +1,11 @@
 .settings {
   display: flex;
 }
+@media (max-width: 768px) {
+  .settings {
+    margin: 75px 20px;
+  }
+}
 .settings__wrapper {
   flex: 9;
   padding: 20px;

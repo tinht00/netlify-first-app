@@ -1,7 +1,10 @@
-
+@use "../../styles/variables" as *;
 
 .settings {
    display: flex;
+   @include breakpoint (md){
+      margin: 75px 20px;
+   }
 
    &__wrapper {
       flex: 9;

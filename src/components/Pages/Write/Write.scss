@@ -10,6 +10,11 @@
       height: 55vh;
       object-fit: cover;
       border-radius: 10px;
+
+      @include breakpoint (md){
+         margin-top: 20%;
+         height: 20vh;
+      }
    }
 
    &__form {
@@ -19,7 +24,9 @@
       .form__group {
          display: flex;
          margin-left: 150px;
-
+         @include breakpoint (md){
+            margin-left: 35px;
+         }
          label {
             display: flex;
             align-items: center;

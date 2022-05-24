@@ -11,6 +11,9 @@ function NavbarMobile() {
   return (
     <div className="navbar__md">
       <div className="nav__toggle">
+      <div className="nav__title">
+      Cats Blog
+      </div>
         <i
           onClick={handleClickNavItem}
           className="nav__responsive-icon fa-solid fa-bars"

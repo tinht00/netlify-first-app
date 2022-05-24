@@ -10,6 +10,12 @@
   object-fit: cover;
   border-radius: 10px;
 }
+@media (max-width: 768px) {
+  .write__img {
+    margin-top: 20%;
+    height: 20vh;
+  }
+}
 .write__form {
   position: relative;
   margin-bottom: 300px;
@@ -17,6 +23,11 @@
 .write__form .form__group {
   display: flex;
   margin-left: 150px;
+}
+@media (max-width: 768px) {
+  .write__form .form__group {
+    margin-left: 35px;
+  }
 }
 .write__form .form__group label {
   display: flex;

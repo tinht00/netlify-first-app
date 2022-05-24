@@ -1,5 +1,5 @@
 import Footer from "../../Footer/Footer"
-import Sidebar from "../../Sidebar/Sidebar"
+
 import "./Settings.css"
 
 function Settings() {
@@ -23,13 +23,12 @@ function Settings() {
      <label>Username</label>
      <input type="text" className="" placeholder="Arius" />
      <label>Email</label>
-     <input type="email" className="" placeholder="arius00@gmail.com" />
+     <input type="email" className="" placeholder="tinht00@gmail.com" />
      <label>Password</label>
      <input type="password" className="" placeholder="********" />
      <button className="settings__submit">Update</button>
    </form>
    </div>
-   <Sidebar />
     </div>
     <Footer /></>
   )
